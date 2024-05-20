@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install Veracode CLI
-RUN cd /usr/local/app && curl -fsS https://tools.veracode.com/veracode-cli/install | sh
+RUN cd /usr/local/bin && curl -fsS https://tools.veracode.com/veracode-cli/install | sh
 
 # Workaround:
 #RUN /app/veracode package -das /app || true
